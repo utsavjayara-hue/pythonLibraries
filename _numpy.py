@@ -25,7 +25,8 @@ print(array*array2)
 #broadcating : smaller array made big by repearting element.for NumPy to broadcast two dimensions together, they must be compatible. Two dimensions are compatible when:They are equal to each other, OR    One of them is 1.
 
 #Agregate functions
-print(np.sum(array,0))#0 for collum and 1 for axis
+
+print(np.sum(array,0))#0 for collum and 1 for row
 print(np.argmax(array,1))
 
 #filtering
@@ -35,3 +36,5 @@ print(np.where(array>4,array,0))# return orignal array with the element not foll
 rng=np.random.default_rng()
 print(rng.integers(1,10,(3,3)))# 3*3 array with randominteger from 1 to 9
 print(np.random.uniform(-1,1,(3,3)))# 3*3 array with random float  from -1 to 1
+
+print(np.where(array==2)[)#gets the cordinate for element 2 in the array in the format (x,y)
